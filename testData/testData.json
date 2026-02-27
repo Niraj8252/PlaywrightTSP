@@ -1,0 +1,22 @@
+[
+    {
+	"email": "pasha@gmail.com", 
+	"pass": "adil1234", 
+	"validity": "valid"
+    },
+    {
+	"email": "invalid@test.com", 
+	"pass": "test12", 
+	"validity": "invalid"
+    },
+    {
+	"email": "animal@test.com", 	
+	"pass": "test234", 
+	"validity": "invalid"
+    },
+    {
+	"email": "", 
+	"pass": "", 
+	"validity": "invalid"
+     }
+]

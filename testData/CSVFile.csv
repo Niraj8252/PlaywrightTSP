@@ -1,0 +1,5 @@
+email,pass,validity
+pasha@gmail.com,adil1234,valid
+invalid@test.com,test12,invalid
+animal@test.com,test234,invalid
+,,invalid

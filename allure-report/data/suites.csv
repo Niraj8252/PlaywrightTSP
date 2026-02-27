@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","19282","Search test","chromium","2025-12-15","passed","2025-12-15","","reporter.spec.ts","",""
+"","24442","Search test","firefox","2025-12-15","passed","2025-12-15","","reporter.spec.ts","",""
+"","36536","validate title","firefox","2025-12-15","broken","2025-12-15","","reporter.spec.ts","",""
+"","26530","validate the logo","firefox","2025-12-15","passed","2025-12-15","","reporter.spec.ts","",""
+"","28390","validate the logo","chromium","2025-12-15","passed","2025-12-15","","reporter.spec.ts","",""
+"","25730","validate title","chromium","2025-12-15","failed","2025-12-15","","reporter.spec.ts","",""

@@ -16,12 +16,12 @@ test("Multi select dropdown", async({page})=>{
     const dropdownOptions:Locator = page.locator("#colors>option");
     await expect(dropdownOptions).toHaveCount(7);
 
-    // Chek an option present in the dropdown
+    // Check an option present in the dropdown
 
     const optionText:string[] = (await dropdownOptions.allTextContents()).map(text=>text.trim());
     // console.log(optionText);
 
-     expect(optionText).toContain("Green");  // checks if array contains china
+     expect(optionText).toContain("Green");  // checks if array contains green
     
     // Printing options from dropdown
 

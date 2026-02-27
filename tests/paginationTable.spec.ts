@@ -45,7 +45,8 @@ await page.goto("https://datatables.net/examples/basic_init/zero_configuration.h
 
 const searchField:Locator = page.locator("#dt-search-0");
  await searchField.fill("Serge Baldwin");
-const rows:Locator[] = await page.locator("#example tbody tr").all();
+// const rows:Locator[] = await page.locator("#example tbody tr").all(); Serge Baldwin
+const rows:Locator[] = await page.getByRole("row").all()
 
 if(rows.length>=1){
     let matchFound = false;

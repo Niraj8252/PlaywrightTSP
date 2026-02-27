@@ -47,7 +47,7 @@ test.only("Inner Frame handling", async({page})=>{
     await innfm?.getByLabel("I am a human").check();
     // if(frame3){
     //     const childFrames = frame3.childFrames();
-    //     console.log("Child frame imside the frame3 : ", childFrames.length);
+    //     console.log("Child frame inside the frame3 : ", childFrames.length);
 
     //     const radio =childFrames[0].getByLabel("I am a human");
     //     await radio.check();

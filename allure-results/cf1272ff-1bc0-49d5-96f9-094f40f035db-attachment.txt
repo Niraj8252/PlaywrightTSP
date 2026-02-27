@@ -1,0 +1,3 @@
+Unique Values are :  Set(5) { 'Red', 'Blue', 'Green', 'Yellow', 'White' }
+Duplicates values are :  [ 'Red', 'Green' ]
+Duplicates found :  [ 'Red', 'Green' ]

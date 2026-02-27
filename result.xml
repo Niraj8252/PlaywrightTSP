@@ -1,0 +1,163 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="194.317462">
+<testsuite name="irctc.spec.ts" timestamp="2026-01-30T07:34:20.273Z" hostname="chromium" tests="1" failures="1" skipped="0" time="155.773" errors="0">
+<testcase name="Irctc search" classname="irctc.spec.ts" time="155.773">
+<failure message="irctc.spec.ts:3:5 Irctc search" type="FAILURE">
+<![CDATA[  [chromium] › irctc.spec.ts:3:5 › Irctc search ────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+      - navigating to "https://www.irctc.co.in/nget/train-search", waiting until "load"
+
+
+      3 | test('Irctc search', async({page})=>{
+      4 |
+    > 5 | await page.goto("https://www.irctc.co.in/nget/train-search");
+        |            ^
+      6 | await page.getByLabel("From").fill("Bengalore");
+      7 | await page.getByLabel("To").fill("Pune");
+      8 | await page.getByLabel("DD/MM/YYYY *").fill("30/01/2026");
+        at D:\PlaywrightTSP\tests\irctc.spec.ts:5:12
+
+    Error Context: ..\test-results\irctc-Irctc-search-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\irctc-Irctc-search-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\irctc-Irctc-search-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Error: strict mode violation: getByLabel('To') resolved to 17 elements:
+        1) <button type="submit" _ngcontent-quw-c58="" class="btn btn-primary" aria-label="Confirmation. <br/>w.e.f 12 January 2026, only Aadhaar-authenticated users are allowed to book general reserved tickets on the opening day of Advance Reservation Period(ARP).↵    ↵<br/><br/>12 जनवरी 2026 से अग्रिम आरक्षण अवधि (ARP) के आरंभिक दिन सामान्य आरक्षित टिकटों की बुकिंग केवल आधार-प्रमाणित उपयोगकर्ताओं को ही करने की अनुमति है।. Press OK to confirm">OK</button> aka getByRole('button', { name: 'Confirmation. <br/>w.e.f 12' })
+        2) <a tabindex="0" _ngcontent-quw-c58="" class="ng-star-inserted" aria-label="Click here to set Hindi language">…</a> aka getByLabel('Click here to set Hindi')
+        3) <a tabindex="0" _ngcontent-quw-c58="" class="search_btn loginText ng-star-inserted" aria-label="Click here to Login in application"> LOGIN / REGISTER </a> aka getByLabel('Click here to Login in')
+        4) <a class="a" tabindex="-1" _ngcontent-quw-c58="" aria-label="Sub Menu of Train, foreign Tourist Booking">…</a> aka getByLabel('Sub Menu of Train, foreign')
+        5) <a class="a" tabindex="-1" _ngcontent-quw-c58="" aria-label="Sub Menu of Holiday, Tourist Trains. Having sub menu">…</a> aka getByLabel('Sub Menu of Holiday, Tourist')
+        6) <a tabindex="-1" target="_blank" _ngcontent-quw-c58="" rel="noopener noreferrer" href="https://www.irctctourism.com/bharatgaurav" aria-label="Sub Menu of Tourist Trains, Bharat Gaurav. Website will be opened in new tab">…</a> aka getByLabel('Sub Menu of Tourist Trains, Bharat Gaurav. Website will be opened in new tab')
+        7) <a tabindex="-1" target="_blank" _ngcontent-quw-c58="" rel="noopener noreferrer" href="https://www.the-maharajas.com/" aria-label="Sub Menu of Tourist Trains, Maharaja's Express. Website will be opened in new tab">…</a> aka getByLabel('Sub Menu of Tourist Trains, Maharaja\'s Express. Website will be opened in new')
+        8) <a tabindex="-1" target="_blank" _ngcontent-quw-c58="" rel="noopener noreferrer" href="https://www.goldenchariot.org/" aria-label="Sub Menu of Tourist Trains, Golden Chariot. Website will be opened in new tab">…</a> aka getByLabel('Sub Menu of Tourist Trains, Golden Chariot. Website will be opened in new tab')
+        9) <a class="a" tabindex="-1" _ngcontent-quw-c58="" aria-label="Sub Menu of Holiday,  Tour Packages. Having sub menu">…</a> aka getByLabel('Sub Menu of Holiday, Tour Packages. Having sub menu')
+        10) <a tabindex="-1" target="_blank" _ngcontent-quw-c58="" rel="noopener noreferrer" aria-label="Sub Menu of Tour Packages,  Domestic Packages. Website will be opened in new tab" href="https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=Domestic&sector=All">…</a> aka getByLabel('Sub Menu of Tour Packages, Domestic Packages. Website will be opened in new tab')
+        ...
+
+    Call log:
+      - waiting for getByLabel('To')
+
+
+       5 | await page.goto("https://www.irctc.co.in/nget/train-search");
+       6 | await page.getByLabel("From").fill("Bengalore");
+    >  7 | await page.getByLabel("To").fill("Pune");
+         |                             ^
+       8 | await page.getByLabel("DD/MM/YYYY *").fill("30/01/2026");
+       9 | await page.locator("#journeyClass").selectOption("Vistadome AC (EV)");
+      10 | await page.locator("#journeyQuota").selectOption("LADIES");
+        at D:\PlaywrightTSP\tests\irctc.spec.ts:7:29
+
+    Error Context: ..\test-results\irctc-Irctc-search-chromium-retry1\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\irctc-Irctc-search-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\irctc-Irctc-search-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByLabel('From')
+
+
+      4 |
+      5 | await page.goto("https://www.irctc.co.in/nget/train-search");
+    > 6 | await page.getByLabel("From").fill("Bengalore");
+        |                               ^
+      7 | await page.getByLabel("To").fill("Pune");
+      8 | await page.getByLabel("DD/MM/YYYY *").fill("30/01/2026");
+      9 | await page.locator("#journeyClass").selectOption("Vistadome AC (EV)");
+        at D:\PlaywrightTSP\tests\irctc.spec.ts:6:31
+
+    Error Context: ..\test-results\irctc-Irctc-search-chromium-retry2\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\irctc-Irctc-search-chromium-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\irctc-Irctc-search-chromium-retry2\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #3 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Error: strict mode violation: getByLabel('To') resolved to 17 elements:
+        1) <button type="submit" _ngcontent-hvj-c58="" class="btn btn-primary" aria-label="Confirmation. <br/>w.e.f 12 January 2026, only Aadhaar-authenticated users are allowed to book general reserved tickets on the opening day of Advance Reservation Period(ARP).↵    ↵<br/><br/>12 जनवरी 2026 से अग्रिम आरक्षण अवधि (ARP) के आरंभिक दिन सामान्य आरक्षित टिकटों की बुकिंग केवल आधार-प्रमाणित उपयोगकर्ताओं को ही करने की अनुमति है।. Press OK to confirm">OK</button> aka getByRole('button', { name: 'Confirmation. <br/>w.e.f 12' })
+        2) <a tabindex="0" _ngcontent-hvj-c58="" class="ng-star-inserted" aria-label="Click here to set Hindi language">…</a> aka getByLabel('Click here to set Hindi')
+        3) <a tabindex="0" _ngcontent-hvj-c58="" class="search_btn loginText ng-star-inserted" aria-label="Click here to Login in application"> LOGIN / REGISTER </a> aka getByLabel('Click here to Login in')
+        4) <a class="a" tabindex="-1" _ngcontent-hvj-c58="" aria-label="Sub Menu of Train, foreign Tourist Booking">…</a> aka getByLabel('Sub Menu of Train, foreign')
+        5) <a class="a" tabindex="-1" _ngcontent-hvj-c58="" aria-label="Sub Menu of Holiday, Tourist Trains. Having sub menu">…</a> aka getByLabel('Sub Menu of Holiday, Tourist')
+        6) <a tabindex="-1" target="_blank" _ngcontent-hvj-c58="" rel="noopener noreferrer" href="https://www.irctctourism.com/bharatgaurav" aria-label="Sub Menu of Tourist Trains, Bharat Gaurav. Website will be opened in new tab">…</a> aka getByLabel('Sub Menu of Tourist Trains, Bharat Gaurav. Website will be opened in new tab')
+        7) <a tabindex="-1" target="_blank" _ngcontent-hvj-c58="" rel="noopener noreferrer" href="https://www.the-maharajas.com/" aria-label="Sub Menu of Tourist Trains, Maharaja's Express. Website will be opened in new tab">…</a> aka getByLabel('Sub Menu of Tourist Trains, Maharaja\'s Express. Website will be opened in new')
+        8) <a tabindex="-1" target="_blank" _ngcontent-hvj-c58="" rel="noopener noreferrer" href="https://www.goldenchariot.org/" aria-label="Sub Menu of Tourist Trains, Golden Chariot. Website will be opened in new tab">…</a> aka getByLabel('Sub Menu of Tourist Trains, Golden Chariot. Website will be opened in new tab')
+        9) <a class="a" tabindex="-1" _ngcontent-hvj-c58="" aria-label="Sub Menu of Holiday,  Tour Packages. Having sub menu">…</a> aka getByLabel('Sub Menu of Holiday, Tour Packages. Having sub menu')
+        10) <a tabindex="-1" target="_blank" _ngcontent-hvj-c58="" rel="noopener noreferrer" aria-label="Sub Menu of Tour Packages,  Domestic Packages. Website will be opened in new tab" href="https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=Domestic&sector=All">…</a> aka getByLabel('Sub Menu of Tour Packages, Domestic Packages. Website will be opened in new tab')
+        ...
+
+    Call log:
+      - waiting for getByLabel('To')
+
+
+       5 | await page.goto("https://www.irctc.co.in/nget/train-search");
+       6 | await page.getByLabel("From").fill("Bengalore");
+    >  7 | await page.getByLabel("To").fill("Pune");
+         |                             ^
+       8 | await page.getByLabel("DD/MM/YYYY *").fill("30/01/2026");
+       9 | await page.locator("#journeyClass").selectOption("Vistadome AC (EV)");
+      10 | await page.locator("#journeyQuota").selectOption("LADIES");
+        at D:\PlaywrightTSP\tests\irctc.spec.ts:7:29
+
+    Error Context: ..\test-results\irctc-Irctc-search-chromium-retry3\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\irctc-Irctc-search-chromium-retry3\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\irctc-Irctc-search-chromium-retry3\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\irctc-Irctc-search-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\irctc-Irctc-search-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\irctc-Irctc-search-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\irctc-Irctc-search-chromium-retry1\trace.zip]]
+
+[[ATTACHMENT|test-results\irctc-Irctc-search-chromium-retry2\error-context.md]]
+
+[[ATTACHMENT|test-results\irctc-Irctc-search-chromium-retry2\trace.zip]]
+
+[[ATTACHMENT|test-results\irctc-Irctc-search-chromium-retry3\error-context.md]]
+
+[[ATTACHMENT|test-results\irctc-Irctc-search-chromium-retry3\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,5 +1,4 @@
-import {test, expect} from "@playwright/test"
-import { parseArgs } from "util";
+import {test, expect} from "@playwright/test";
 
 const loginTestData:string[][]= [
     ["pasha@gmail.com", "adil1234", "valid"],

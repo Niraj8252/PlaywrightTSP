@@ -6,7 +6,7 @@ test("Auto suggestion dropdown", async({page})=>{
     await page.locator("input[name='q']").fill("mobile");
     await page.waitForTimeout(5000);
 
-    // Get all the suggestion from dropdow -- Ctrl+Shift+p  => Command -- Emulate focus page
+    // Get all the suggestion from dropdown -- Ctrl+Shift+p  => Command -- Emulate focus page
     const options:Locator= page.locator("ul>li");
 
     const count = await options.count();
